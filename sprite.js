@@ -33,7 +33,8 @@ var Sprite = function(options) {
   // Create our audio sprite definition.
   self.sound = new Howl({
     src: options.src,
-    sprite: options.sprite
+    sprite: options.sprite,
+    html5: true
   });
 
   // Setup a resize event and fire it to setup our sprite overlays.
