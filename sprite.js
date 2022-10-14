@@ -10,16 +10,16 @@
 
 // Cache references to DOM elements.
 var elms = ['waveform', 'sprite0', 'sprite1', 'sprite2', 'sprite3', 'sprite4', 'sprite5'];
-elms.forEach(function(elm) {
-  window[elm] = document.getElementById(elm);
+elms.forEach(function(elm) { // iterate through elms array and preform function 
+  window[elm] = document.getElementById(elm); // cache references to dom elements
 });
 
 /**
  * Sprite class containing the state of our sprites to play and their progress.
- * @param {Object} options Settings to pass into and setup the sound and visuals.
+ * @param {Object} options Settings to pass into and setup the sound and visuals. 
  */
 var Sprite = function(options) {
-  var self = this;
+  var self = this; // assiging this to self makes the variable useable throughout the whole sprite function 
 
   self.sounds = [];
 

@@ -114,7 +114,10 @@ body {
   bottom: -33px;
   left: 0;
 }
-
+/* 
+The media element sets parameters based on user's screen sizes. In this case, if the user's 
+screen size is shoreter than 480px and more narrow than 670px, the body font-size is set to 75%
+*/
 @media screen and (max-height: 480px), screen and (max-width: 670px) {
   body {
     font-size: 75%;
